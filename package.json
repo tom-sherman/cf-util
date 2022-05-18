@@ -1,0 +1,21 @@
+{
+  "name": "cf-util",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./router": "./dist/router.modern.mjs",
+    "./body": "./dist/body.modern.mjs"
+  },
+  "scripts": {
+    "build": "microbundle src/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tom Sherman <the.tomsherman@gmail.com> (https://tom-sherman.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.10.0",
+    "microbundle": "^0.15.0",
+    "typescript": "^4.6.4"
+  }
+}
